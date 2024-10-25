@@ -2,5 +2,7 @@
 .env
 .env.test
 
+node_modules/
+
 # Compiled output
 dist/
