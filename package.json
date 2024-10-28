@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "app.ts",
   "scripts": {
-    "test": "test",
+    "test": "jest",
     "dev": "cross-env NODE_ENV=development ts-node-dev --respawn --transpile-only src/server.ts"
   },
   "author": "",
@@ -17,10 +17,16 @@
     "sequelize": "^6.37.5"
   },
   "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-typescript": "^7.26.0",
+    "@jest/globals": "^29.7.0",
     "@types/bcrypt": "^5.0.2",
     "@types/express": "^5.0.0",
     "@types/node": "^22.8.0",
+    "babel-jest": "^29.7.0",
     "cross-env": "^7.0.3",
+    "jest": "^29.7.0",
     "ts-node": "^10.9.2",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.6.3"

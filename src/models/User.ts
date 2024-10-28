@@ -2,7 +2,7 @@ import { Model, DataTypes, Sequelize } from 'sequelize'
 import bcrypt from 'bcrypt'
 
 interface UserAttributes {
-  id: number
+  id: string
   email: string
   name: string
   password?: string
@@ -13,7 +13,7 @@ interface UserCreationAttributes extends Omit<UserAttributes, 'id'> {
 }
 
 class User extends Model<UserAttributes, UserCreationAttributes> {
-  public id!: number
+  public id!: string
   public email!: string
   public name!: string
   public password!: string
